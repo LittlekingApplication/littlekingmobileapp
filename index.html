@@ -16,18 +16,15 @@
             overflow-x: hidden;
             font-size: 16px;
         }
-
         .container {
             max-width: 100%;
             margin: 0 auto;
             padding: 10px;
             text-align: center;
         }
-
         .language-selector {
             margin-top: 10px;
         }
-
         .language-btn {
             margin: 5px;
             padding: 5px 10px;
@@ -35,13 +32,11 @@
             border: 1px solid black;
             background-color: white;
         }
-
         .header {
             font-size: 24px;
             font-weight: bold;
             padding: 20px 10px;
         }
-
         .rounded-section {
             width: 100%;
             background-color: black;
@@ -53,38 +48,32 @@
             position: relative;
             overflow: hidden;
         }
-
         .rounded-section img {
             position: absolute;
             top: 150px;
             left: 50%;
             transform: translateX(-50%) translateY(-50%);
-            max-width: 70%;
+            max-width: 50%;
             filter: invert(1);
         }
-
         .content {
             padding: 20px;
             background-color: black;
             color: white;
             text-align: left;
         }
-
         .section {
             margin-bottom: 20px;
         }
-
         .section h3 {
             text-align: center;
             font-size: 24px;
         }
-
         .info-text {
             text-align: center;
             margin-bottom: 20px;
             font-size: 1em;
         }
-
         .footer {
             background-color: red;
             color: white;
@@ -93,30 +82,25 @@
             font-weight: bold;
             text-align: center;
         }
-
         .service-item {
             display: flex;
             align-items: flex-start;
             margin-bottom: 10px;
         }
-
         .service-icon {
             width: 50px;
             margin-right: 10px;
             flex-shrink: 0;
         }
-
         .location-item {
             display: flex;
             align-items: center;
             margin-bottom: 10px;
         }
-
         .qr-code {
             width: 50px;
             margin: 0 5px;
         }
-
         .contact-info {
             background-color: black;
             padding: 15px;
@@ -127,81 +111,66 @@
             justify-content: space-between;
             align-items: flex-start;
         }
-
         .small-text {
             font-size: 0.9em;
             color: red;
         }
-
         .highlight-section {
             text-align: center;
             margin-top: 20px;
         }
-
         .highlight {
             display: flex;
             justify-content: center;
             align-items: center;
             margin-bottom: 20px;
         }
-
         .highlight-content {
             display: flex;
             align-items: center;
             max-width: 800px;
             margin: 0 auto;
         }
-
         .highlight-image {
             flex: 1;
             margin-right: 20px;
         }
-
         .highlight-text {
             flex: 2;
             text-align: left;
         }
-
-        .highlight h3 { 
+        .highlight h3 {
             text-align: center;
             margin-bottom: 10px;
         }
-
         .center-text {
             text-align: center;
             margin-top: 10px;
         }
-
         .tour-item,
         .restaurant-item {
             margin: 20px 0;
         }
-
         .restaurant-list {
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 10px 0;
         }
-
         .restaurant-name {
             text-align: center;
             margin-bottom: 3px;
         }
-
         .restaurant-address {
             color: red;
             text-decoration: none;
         }
-
         .restaurant-address:hover {
             text-decoration: underline;
         }
-
         .restaurant-section {
             margin: 30px 0;
         }
-
         .restaurant-image {
             margin: 20px auto;
             border: 2px solid white;
@@ -221,7 +190,7 @@
             <button class="language-btn" onclick="changeLanguage('de')">DE</button>
         </div>
 
-        <div class="header" id="header">Welcome to Little King</div>
+        <div class="header" id="header">Vítejte v hotelu Little King</div>
 
         <div class="rounded-section">
             <a href="https://www.littleking.cz/">
@@ -231,57 +200,57 @@
 
         <div class="content">
             <div class="section">
-                <h3 id="hotel-info-title">Hotel Information</h3>
+                <h3 id="hotel-info-title">Informace o hotelu</h3>
                 <p class="info-text" id="info-text">
-                    Check-in: 3 p.m.<br>
-                    Check-out: 11 a.m.<br>
-                    Breakfast hours: 7.30-10.30 a.m.<br>
-                    Room cleaning hours: 3-6 p.m.<br>
-                    Reception desk is available 24/7<br>
-                    Wi-Fi is accessible without a password
+                    Check-in: 15:00<br>
+                    Check-out: 11:00<br>
+                    Snídaně: 7:30-10:30<br>
+                    Úklid pokojů: 15:00-18:00<br>
+                    Recepce je otevřena 24/7<br>
+                    Wi-Fi je dostupný bez hesla
                 </p>
             </div>
 
             <div class="section">
-                <h3 id="services-title">Our Services</h3>
+                <h3 id="services-title">Naše služby</h3>
                 <div class="service-item">
                     <img src="Concierge.png" alt="Concierge Icon" class="service-icon">
                     <div class="service-description">
-                        <div class="service-title" id="concierge-title">Concierge service</div>
-                        <span id="concierge-desc">Elevate your experience with custom tours, special occasion room setups as birthday set or romantic set, and more!</span>
+                        <div class="service-title" id="concierge-title">Služba concierge</div>
+                        <span id="concierge-desc">Zvyšte své zkušenosti s vlastními zážitky, jako jsou výlety, speciální přípravy pokojů na narozeniny nebo romantické chvíle a další!</span>
                     </div>
                 </div>
                 <div class="service-item">
                     <img src="Taxi.png" alt="Taxi Icon" class="service-icon">
                     <div class="service-description">
-                        <div class="service-title" id="taxi-title">Taxi service</div>
-                        <span id="taxi-desc">Enjoy transportation to and from major transit points like the airport and train station, ensuring a smooth start and end to your travels!</span>
+                        <div class="service-title" id="taxi-title">Služba taxi</div>
+                        <span id="taxi-desc">Užijte si dopravu z a na hlavní dopravní uzly, jako je letiště a vlakové nádraží!</span>
                     </div>
                 </div>
                 <div class="service-item">
                     <img src="Restaurant.png" alt="Restaurant Icon" class="service-icon">
                     <div class="service-description">
-                        <div class="service-title" id="restaurant-title">Restaurant booking</div>
-                        <span id="restaurant-desc">Savor the best of local and international cuisine with our restaurant booking service, guaranteeing you a table at top-rated restaurants!</span>
+                        <div class="service-title" id="restaurant-title">Rezervace restaurací</div>
+                        <span id="restaurant-desc">Ochutnejte to nejlepší z místní i mezinárodní kuchyně s naším servisem rezervace restaurací!</span>
                     </div>
                 </div>
             </div>
 
             <div class="section">
-                <h3 id="locations-title">Our Locations</h3>
+                <h3 id="locations-title">Naše místa</h3>
                 <div class="location-item">
                     <a href="https://www.google.com/maps/search/?api=1&query=Hotel+U+Malvaze+Anenská+7,+Prague+1" target="_blank">
                         <img src="QR Malvaz.png" alt="QR Code" class="qr-code">
                     </a>
                     <div>
                         <strong id="hotel-malvaze">Hotel U Malvaze</strong><br>
-                        <span id="malvaze-info">Anenská 7, Prague 1<br>Main hotel with 24/7 reception desk</span>
+                        <span id="malvaze-info">Anenská 7, Praha 1<br>Hlavní hotel s recepcí 24/7</span>
                     </div>
                 </div>
                 <div class="location-item" style="justify-content: flex-end;">
                     <div style="text-align: right;">
                         <strong id="boutique-residence">Boutique Residence</strong><br>
-                        <span id="boutique-info">Jilská 24, Prague 1<br>Residence with self check-in kiosk</span>
+                        <span id="boutique-info">Jilská 24, Praha 1<br>Rezidence s kioskem pro samoobslužný check-in</span>
                     </div>
                     <a href="https://www.google.com/maps/search/?api=1&query=Boutique+Residence+Jilská+24,+Prague+1" target="_blank">
                         <img src="QR Boutique.png" alt="QR Code" class="qr-code">
@@ -293,15 +262,15 @@
                     </a>
                     <div>
                         <strong id="old-town-residence">Old Town Residence</strong><br>
-                        <span id="old-town-info">Maiselová 15, Prague 1<br>Residence with self check-in kiosk</span>
+                        <span id="old-town-info">Maiselová 15, Praha 1<br>Rezidence s kioskem pro samoobslužný check-in</span>
                     </div>
                 </div>
             </div>
 
             <div class="section">
-                <h3 id="contact-title">Contact Us</h3>
+                <h3 id="contact-title">Kontaktujte nás</h3>
                 <p class="center-text" id="contact-info">
-                    If you have any questions, feel free to contact our reception via WhatsApp or by email.
+                    Pokud máte jakékoliv dotazy, neváhejte se obrátit na naši recepci pomocí WhatsAppu nebo e-mailem.
                 </p>
                 <div class="contact-info">
                     <div class="contact-phone" style="flex: 1;">
@@ -315,15 +284,15 @@
             </div>
 
             <div class="highlight-section">
-                <h3 id="highlights-title">Prague Highlights</h3>
+                <h3 id="highlights-title">Hlavní atrakcije Prahy</h3>
                 <div class="highlight">
                     <div class="highlight-content">
                         <div class="highlight-image">
                             <img src="Charles Bridge.png" alt="The Charles Bridge" style="max-width: 100%; height: auto;">
                         </div>
                         <div class="highlight-text">
-                            <strong id="bridge-title">The Charles Bridge</strong><br>
-                            <div id="bridge-desc">is a historic stone bridge that offers breathtaking views of the Vltava River and Prague Castle</div>
+                            <strong id="bridge-title">Karlův most</strong><br>
+                            <div id="bridge-desc">je historický kamenný most, který nabízí úchvatné výhledy na Vltavu a Pražský hrad</div>
                         </div>
                     </div>
                 </div>
@@ -333,8 +302,8 @@
                             <img src="Old Town Square.png" alt="Old Town Square" style="max-width: 100%; height: auto;">
                         </div>
                         <div class="highlight-text">
-                            <strong id="square-title">Old Town Square</strong><br>
-                            <div id="square-desc">showcases the famous Astronomical Clock, colorful buildings, and a vibrant atmosphere</div>
+                            <strong id="square-title">Staroměstské náměstí</strong><br>
+                            <div id="square-desc">je známé svou slavnou astronomickou hodinou, barevnými budovami a živou atmosférou</div>
                         </div>
                     </div>
                 </div>
@@ -344,8 +313,8 @@
                             <img src="Prague Castle.png" alt="Prague Castle" style="max-width: 100%; height: auto;">
                         </div>
                         <div class="highlight-text">
-                            <strong id="castle-title">Prague Castle</strong><br>
-                            <div id="castle-desc">is a grand fortress comprising museums, churches, and breathtaking architecture</div>
+                            <strong id="castle-title">Pražský hrad</strong><br>
+                            <div id="castle-desc">je velkolepá pevnost, která zahrnuje muzea, kostely a dech beroucí architekturu</div>
                         </div>
                     </div>
                 </div>
@@ -355,8 +324,8 @@
                             <img src="Wenceslas Square.png" alt="Wenceslas Square" style="max-width: 100%; height: auto;">
                         </div>
                         <div class="highlight-text">
-                            <strong id="wenceslas-title">Wenceslas Square</strong><br>
-                            <div id="wenceslas-desc">is a vibrant district brimming with shops, eateries, and historic architecture</div>
+                            <strong id="wenceslas-title">Václavské náměstí</strong><br>
+                            <div id="wenceslas-desc">je živá čtvrť plná obchodů, restaurací a historické architektury</div>
                         </div>
                     </div>
                 </div>
@@ -366,38 +335,38 @@
                             <img src="Jewish Quarter.png" alt="The Jewish Quarter" style="max-width: 100%; height: auto;">
                         </div>
                         <div class="highlight-text">
-                            <strong id="jewish-title">The Jewish Quarter</strong><br>
-                            <div id="jewish-desc">is historical significance with synagogues, the Jewish Cemetery, and various landmarks</div>
+                            <strong id="jewish-title">Židovská čtvrť</strong><br>
+                            <div id="jewish-desc">má historický význam s synagogami, židovským hřbitovem a dalšími památkami</div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="highlight-section">
-                <h3 id="city-tours-title">Prague City Tours</h3>
+                <h3 id="city-tours-title">Městské výlety v Praze</h3>
                 <div class="tour-item">
                     <strong id="all-inclusive-tour-title">All Inclusive Tour:</strong><br>
-                    <span id="all-inclusive-tour-desc">This comprehensive tour allows you to experience the best of Prague in six hours. It includes a scenic boat trip on the Vltava River, offering unique views of the city from the water, including sights like Charles Bridge and Prague Castle.</span><br>
+                    <span id="all-inclusive-tour-desc">Tento komplexní výlet vám umožní zažít to nejlepší z Prahy za šest hodin. Zahrnuje malebnou plavbu po Vltavě.</span><br>
                     <strong>Price:</strong> 1590 CZK / 1500 CZK Senior & Student
                 </div>
                 <div class="tour-item">
-                    <strong id="castle-tour-title">Prague Castle:</strong><br>
-                    <span id="castle-tour-desc">Explore the grandeur of Prague Castle with this two-hour guided tour that takes you through the entire castle area.</span><br>
+                    <strong id="castle-tour-title">Výlet na Pražský hrad:</strong><br>
+                    <span id="castle-tour-desc">Prozkoumejte velkolepost Pražského hradu s tímto dvouhodinovým výkladem.</span><br>
                     <strong>Price:</strong> 650 CZK
                 </div>
                 <div class="tour-item">
-                    <strong id="jewish-town-tour-title">Prague Jewish Town:</strong><br>
-                    <span id="jewish-town-tour-desc">This three-hour tour takes you through Prague’s historic Jewish Quarter, known as Josefov. The tour includes visits to the ancient synagogues, the Jewish Cemetery, and the Old-New Synagogue.</span><br>
+                    <strong id="jewish-town-tour-title">Židovské město v Praze:</strong><br>
+                    <span id="jewish-town-tour-desc">Tento tříhodinový výlet vás provede historickou Židovskou čtvrtí.</span><br>
                     <strong>Price:</strong> 1290 CZK / 1250 CZK Senior & Student
                 </div>
                 <div class="tour-item">
-                    <strong id="night-cruise-title">Prague by Night River Cruise:</strong><br>
-                    <span id="night-cruise-desc">Experience the magic of Prague at night with this three-hour evening river cruise.</span><br>
+                    <strong id="night-cruise-title">Noční plavba po Vltavě:</strong><br>
+                    <span id="night-cruise-desc">Zažijte kouzlo Prahy v noci s touto tříhodinovou večerní plavbou.</span><br>
                     <strong>Price:</strong> 1480 CZK essential / 1980 CZK exclusive
                 </div>
                 <div class="tour-item">
-                    <strong id="beer-tour-title">Beer Tour:</strong><br>
-                    <span id="beer-tour-desc">Discover the famous Czech beer culture on this 3.5-hour guided beer-tasting tour. You'll visit some of Prague's best pubs and breweries, where you can sample a variety of Czech beers and learn about the brewing process.</span><br>
+                    <strong id="beer-tour-title">Pivní výlet:</strong><br>
+                    <span id="beer-tour-desc">Objevte českou pivní kulturu na této tříapůlhodinové exkurzi.</span><br>
                     <strong>Price:</strong> 1300 CZK
                 </div>
                 <div class="tour-item">
@@ -405,47 +374,47 @@
                     <strong>Price:</strong> 950 CZK / 800 CZK / 650 CZK
                 </div>
                 <div class="tour-item">
-                    <strong id="hop-on-title">Hop-On Hop-Off Bus:</strong><br>
+                    <strong id="hop-on-title">Hop-On Hop-Off autobus:</strong><br>
                     <strong>Price:</strong> 870 CZK 24hr / 990 CZK 48hr
                 </div>
             </div>
 
             <div class="highlight-section">
-                <h3 id="out-tours-title">Out of Prague Tours</h3>
+                <h3 id="out-tours-title">Výlety z Prahy</h3>
                 <div class="tour-item">
                     <strong id="cesky-krumlov-title">Český Krumlov:</strong><br>
-                    <span id="cesky-krumlov-desc">This full-day tour takes you to Český Krumlov, home to the largest Baroque chateau in the Czech Republic.</span><br>
+                    <span id="cesky-krumlov-desc">Celodenní výlet do Českého Krumlova.</span><br>
                     <span id="cesky-krumlov-price">Price: 2890 CZK / 2790 CZK Senior & Student</span>
                 </div>
                 <div class="tour-item">
-                    <strong id="terezin-title">Terezin Monument:</strong><br>
-                    <span id="terezin-desc">This poignant tour takes you to the town of Terezín, the site of the largest concentration camp in the Czech Republic during World War II.</span><br>
+                    <strong id="terezin-title">Terezín:</strong><br>
+                    <span id="terezin-desc">Poignant tour to Terezín.</span><br>
                     <span id="terezin-price">Price: 1490 CZK / 1390 CZK Senior & Student</span>
                 </div>
                 <div class="tour-item">
-                    <strong id="karlovy-vary-title">Karlovy Vary Tour:</strong><br>
-                    <span id="karlovy-vary-desc">Discover the beauty and elegance of Karlovy Vary, the most famous spa town in the Czech Republic.</span><br>
+                    <strong id="karlovy-vary-title">Karlovy Vary:</strong><br>
+                    <span id="karlovy-vary-desc">Objevte krásy Karlových Varů, lázeňského města.</span><br>
                     <span id="karlovy-vary-price">Price: 2190 CZK / 2140 CZK Senior & Student</span>
                 </div>
                 <div class="tour-item">
-                    <strong id="karlstejn-title">Karlštejn Castle Tour:</strong><br>
-                    <span id="karlstejn-desc">Visit the majestic Karlštejn Castle, a 14th-century Gothic fortress built by Emperor Charles IV to protect the crown jewels.</span><br>
+                    <strong id="karlstejn-title">Karlštejn:</strong><br>
+                    <span id="karlstejn-desc">Návštěva majestátního hradu Karlštejn.</span><br>
                     <span id="karlstejn-price">Price: 1390 CZK / 1290 CZK Senior & Student</span>
                 </div>
                 <div class="tour-item">
-                    <strong id="kutna-hora-title">Kutná Hora Tour:</strong><br>
-                    <span id="kutna-hora-desc">Explore the UNESCO-listed town of Kutná Hora, renowned for its beautifully preserved medieval architecture.</span><br>
+                    <strong id="kutna-hora-title">Kutná Hora:</strong><br>
+                    <span id="kutna-hora-desc">Prozkoumejte město Kutnou Horu, památku UNESCO.</span><br>
                     <span id="kutna-hora-price">Price: 1640 CZK / 1540 CZK Senior & Student</span>
                 </div>
             </div>
 
             <div class="highlight-section">
-                <h3 id="restaurant-title">Restaurant U Malvaze</h3>
+                <h3 id="restaurant-title">Restaurace U Malvaze</h3>
                 <img src="Restaurant Menu.png" alt="Restaurant Image" class="restaurant-image">
             </div>
 
             <div class="footer">
-                <div id="footer-text">We will be happy to organize a tour for you or book a table in a restaurant at our reception or by phone</div>
+                <div id="footer-text">Rádi pro vás zorganizujeme výlet nebo rezervaci stolu v restauraci na naší recepci nebo telefonicky</div>
                 <br>
                 <a href="tel:+420774921601" style="color: white; font-size: 1.2em;">+420 774 921 601</a>
             </div>
@@ -454,10 +423,364 @@
 
     <script>
         const translations = {
-            // Zde prosím vložte vaše překlady
+            en: {
+                header: "Welcome to Little King",
+                "hotel-info-title": "Hotel Information",
+                "info-text": "Check-in: 3 p.m.<br>Check-out: 11 a.m.<br>Breakfast hours: 7.30-10.30 a.m.<br>Room cleaning hours: 3-6 p.m.<br>Reception desk is available 24/7<br>Wi-Fi is accessible without a password",
+                "services-title": "Our Services",
+                "concierge-title": "Concierge service",
+                "concierge-desc": "Elevate your experience with custom tours, special occasion room setups as birthday set or romantic set, and more!",
+                "taxi-title": "Taxi service",
+                "taxi-desc": "Enjoy transportation to and from major transit points like the airport and train station!",
+                "restaurant-title": "Restaurant booking",
+                "restaurant-desc": "Savor the best of local and international cuisine with our restaurant booking service!",
+                "locations-title": "Our Locations",
+                "hotel-malvaze": "Hotel U Malvaze",
+                "malvaze-info": "Anenská 7, Prague 1<br>Main hotel with 24/7 reception desk",
+                "boutique-residence": "Boutique Residence",
+                "boutique-info": "Jilská 24, Prague 1<br>Residence with self check-in kiosk",
+                "old-town-residence": "Old Town Residence",
+                "old-town-info": "Maiselová 15, Prague 1<br>Residence with self check-in kiosk",
+                "contact-title": "Contact Us",
+                "contact-info": "If you have any questions, feel free to contact our reception via WhatsApp or by email.",
+                "highlights-title": "Prague Highlights",
+                "bridge-title": "The Charles Bridge",
+                "bridge-desc": "is a historic stone bridge that offers breathtaking views of the Vltava River and Prague Castle.",
+                "square-title": "Old Town Square",
+                "square-desc": "showcases the famous Astronomical Clock, colorful buildings, and a vibrant atmosphere.",
+                "castle-title": "Prague Castle",
+                "castle-desc": "is a grand fortress comprising museums, churches, and breathtaking architecture.",
+                "wenceslas-title": "Wenceslas Square",
+                "wenceslas-desc": "is a vibrant district brimming with shops, eateries, and historic architecture.",
+                "jewish-title": "The Jewish Quarter",
+                "jewish-desc": "is of historical significance with synagogues, the Jewish Cemetery, and various landmarks.",
+                "city-tours-title": "Prague City Tours",
+                "all-inclusive-tour-title": "All Inclusive Tour:",
+                "all-inclusive-tour-desc": "This comprehensive tour allows you to experience the best of Prague in six hours.",
+                "castle-tour-title": "Prague Castle Tour:",
+                "castle-tour-desc": "Explore the grandeur of Prague Castle with this two-hour guided tour.",
+                "night-cruise-title": "Prague by Night River Cruise:",
+                "night-cruise-desc": "Experience the magic of Prague at night with this three-hour evening river cruise.",
+                "beer-tour-title": "Beer Tour:",
+                "beer-tour-desc": "Discover the famous Czech beer culture on this 3.5-hour guided beer tasting tour.",
+                "out-tours-title": "Out of Prague Tours",
+                "cesky-krumlov-title": "Český Krumlov:",
+                "cesky-krumlov-desc": "This full-day tour takes you to Český Krumlov.",
+                "cesky-krumlov-price": "Price: 2890 CZK / 2790 CZK Senior & Student",
+                "terezin-title": "Terezin Monument:",
+                "terezin-desc": "This poignant tour takes you to Terezin.",
+                "terezin-price": "Price: 1490 CZK / 1390 CZK Senior & Student",
+                "karlovy-vary-title": "Karlovy Vary Tour:",
+                "karlovy-vary-desc": "Discover the beauty and elegance of Karlovy Vary.",
+                "karlovy-vary-price": "Price: 2190 CZK / 2140 CZK Senior & Student",
+                "karlstejn-title": "Karlštejn Castle Tour:",
+                "karlstejn-desc": "Visit the majestic Karlštejn Castle.",
+                "karlstejn-price": "Price: 1390 CZK / 1290 CZK Senior & Student",
+                "kutna-hora-title": "Kutná Hora Tour:",
+                "kutna-hora-desc": "Explore the UNESCO-listed town of Kutná Hora.",
+                "kutna-hora-price": "Price: 1640 CZK / 1540 CZK Senior & Student",
+                "restaurant-title": "Restaurant U Malvaze",
+                "footer-text": "We will be happy to organize a tour for you or book a table in a restaurant at our reception or by phone."
+            },
+            ru: {
+                header: "Добро пожаловать в Little King",
+                "hotel-info-title": "Информация о гостинице",
+                "info-text": "Заселение: 15:00<br>Выселение: 11:00<br>Завтрак: 7:30-10:30<br>Уборка номеров: 15:00-18:00<br>Ресепшн работает круглосуточно<br>Wi-Fi бесплатно",
+                "services-title": "Наши услуги",
+                "concierge-title": "Услуга консьержа",
+                "concierge-desc": "Увеличьте свои впечатления, воспользовавшись индивидуальными турами, оформлением комнат и другими услугами!",
+                "taxi-title": "Услуга такси",
+                "taxi-desc": "Комфортабельный трансфер до аэропорта и железнодорожного вокзала!",
+                "restaurant-title": "Резервирование ресторанов",
+                "restaurant-desc": "Побалуйте себя лучшими блюдами местной и международной кухни!",
+                "locations-title": "Наши места",
+                "hotel-malvaze": "Гостиница U Malvaze",
+                "malvaze-info": "Anenská 7, Прага 1<br>Главный отель с круглосуточным ресепшном",
+                "boutique-residence": "Бутик Резиденс",
+                "boutique-info": "Jilská 24, Прага 1<br>Резиденция с киоском для самообслуживания",
+                "old-town-residence": "Старый Город Резиденс",
+                "old-town-info": "Maiselová 15, Прага 1<br>Резиденция с киоском для самообслуживания",
+                "contact-title": "Контакты",
+                "contact-info": "Если у вас есть вопросы, не стесняйтесь обращаться к нашей приёмной по WhatsApp или по электронной почте.",
+                "highlights-title": "Основные достопримечательности Праги",
+                "bridge-title": "Карлов мост",
+                "bridge-desc": "исторический каменный мост, который предлагает захватывающие виды на реку Влтава и Пражский замок.",
+                "square-title": "Староместская площадь",
+                "square-desc": "знаменитая астрономическая часы, колоритные здания и живая атмосфера.",
+                "castle-title": "Пражский замок",
+                "castle-desc": "грандиозная крепость, которая включает в себя музеи, церкви и архитектурные шедевры.",
+                "wenceslas-title": "Вацлавская площадь",
+                "wenceslas-desc": "оживленный район, наполненный магазинами, ресторанами и исторической архитектурой.",
+                "jewish-title": "Еврейский квартал",
+                "jewish-desc": "исторические важные места с синагогами, еврейским кладбищем и разными достопримечательностями.",
+                "city-tours-title": "Городские экскурсии в Праге",
+                "all-inclusive-tour-title": "All Inclusive Tour:",
+                "all-inclusive-tour-desc": "Этот комплексный тур даст вам возможность увидеть лучшее из Праги за шесть часов.",
+                "castle-tour-title": "Экскурсия по Пражскому замку:",
+                "castle-tour-desc": "Изучите великолепие Пражского замка с этой экскурсии на два часа.",
+                "night-cruise-title": "Ночной круиз по Влтаве:",
+                "night-cruise-desc": "Почувствуйте магию Праги при ночной экскурсии.",
+                "beer-tour-title": "Пивной тур:",
+                "beer-tour-desc": "Познайте чешскую пивную культуру в ходе трехчасового тура.",
+                "out-tours-title": "Экскурсии из Праги",
+                "cesky-krumlov-title": "Чешский Крумлов:",
+                "cesky-krumlov-desc": "Однодневный тур в Чешский Круmлов.",
+                "cesky-krumlov-price": "Цена: 2890 CZK / 2790 CZK для пожилых и студентов",
+                "terezin-title": "Мемориал Терецина:",
+                "terezin-desc": "Этот значимый тур вас ведет в Тереzin.",
+                "terezin-price": "Цена: 1490 CZK / 1390 CZK для пожилых и студентов",
+                "karlovy-vary-title": "Экскурсия в Карловы Вары:",
+                "karlovy-vary-desc": "Узнайте красоты и элегантность Карловых Вар.",
+                "karlovy-vary-price": "Цена: 2190 CZK / 2140 CZK для пожилых и студентов",
+                "karlstejn-title": "Экскурсия по замку Карлштейн:",
+                "karlstejn-desc": "Посещение величественного замка Карлштейн.",
+                "karlstejn-price": "Цена: 1390 CZK / 1290 CZK для пожилых и студентов",
+                "kutna-hora-title": "Экскурсия по Кутной Горе:",
+                "kutna-hora-desc": "Изучите город Кутную Гору, объект Всемирного наследия ЮНЕСКО.",
+                "kutna-hora-price": "Цена: 1640 CZK / 1540 CZK для пожилых и студентов",
+                "restaurant-title": "Ресторан U Malvaze",
+                "footer-text": "Мы с радостью organizуем для вас экскурсию или забронируем столик в ресторане на нашей рецепции или по телефону."
+            },
+            cs: {
+                header: "Vítejte v hotelu Little King",
+                "hotel-info-title": "Informace o hotelu",
+                "info-text": "Check-in: 15:00<br>Check-out: 11:00<br>Snídaně: 7:30-10:30<br>Úklid pokojů: 15:00-18:00<br>Recepce je otevřena 24/7<br>Wi-Fi je dostupný bez hesla",
+                "services-title": "Naše služby",
+                "concierge-title": "Služba concierge",
+                "concierge-desc": "Zvyšte své zkušenosti s vlastními zážitky, jako jsou výlety, speciální přípravy pokojů na narozeniny nebo romantické chvíle a další!",
+                "taxi-title": "Služba taxi",
+                "taxi-desc": "Užijte si dopravu z a na hlavní dopravní uzly, jako je letiště a vlakové nádraží!",
+                "restaurant-title": "Rezervace restaurací",
+                "restaurant-desc": "Ochutnejte to nejlepší z místní i mezinárodní kuchyně s naším servisem rezervace restaurací!",
+                "locations-title": "Naše místa",
+                "hotel-malvaze": "Hotel U Malvaze",
+                "malvaze-info": "Anenská 7, Praha 1<br>Hlavní hotel s recepcí 24/7",
+                "boutique-residence": "Boutique Residence",
+                "boutique-info": "Jilská 24, Praha 1<br>Rezidence s kioskem pro samoobslužný check-in",
+                "old-town-residence": "Old Town Residence",
+                "old-town-info": "Maiselová 15, Praha 1<br>Rezidence s kioskem pro samoobslužný check-in",
+                "contact-title": "Kontaktujte nás",
+                "contact-info": "Pokud máte jakékoliv dotazy, neváhejte se obrátit na naši recepci pomocí WhatsAppu nebo e-mailem.",
+                "highlights-title": "Hlavní atrakcije Prahy",
+                "bridge-title": "Karlův most",
+                "bridge-desc": "je historický kamenný most, který nabízí úchvatné výhledy na Vltavu a Pražský hrad.",
+                "square-title": "Staroměstské náměstí",
+                "square-desc": "je známé svou slavnou astronomickou hodinou, barevnými budovami a živou atmosférou.",
+                "castle-title": "Pražský hrad",
+                "castle-desc": "je velkolepá pevnost, která zahrnuje muzea, kostely a dech beroucí architekturu.",
+                "wenceslas-title": "Václavské náměstí",
+                "wenceslas-desc": "je živá čtvrť plná obchodů, restaurací a historické architektury.",
+                "jewish-title": "Židovská čtvrť",
+                "jewish-desc": "má historický význam s synagogami, židovským hřbitovem a dalšími památkami.",
+                "city-tours-title": "Městské výlety v Praze",
+                "all-inclusive-tour-title": "All Inclusive Tour:",
+                "all-inclusive-tour-desc": "Tento komplexní výlet vám umožní zažít to nejlepší z Prahy za šest hodin.",
+                "castle-tour-title": "Výlet na Pražský hrad:",
+                "castle-tour-desc": "Prozkoumejte velkolepost Pražského hradu s tímto dvouhodinovým výkladem.",
+                "night-cruise-title": "Noční plavba po Vltavě:",
+                "night-cruise-desc": "Zažijte kouzlo Prahy v noci s touto tříhodinovou večerní plavbou.",
+                "beer-tour-title": "Pivní výlet:",
+                "beer-tour-desc": "Objevte českou pivní kulturu na této tříapůlhodinové exkurzi.",
+                "out-tours-title": "Výlety z Prahy",
+                "cesky-krumlov-title": "Český Krumlov:",
+                "cesky-krumlov-desc": "Celodenní výlet do Českého Krumlova.",
+                "cesky-krumlov-price": "Cena: 2890 CZK / 2790 CZK Senior & Student",
+                "terezin-title": "Muzeum Terezín:",
+                "terezin-desc": "Tento významný výlet vás zavede do Terezína.",
+                "terezin-price": "Cena: 1490 CZK / 1390 CZK Senior & Student",
+                "karlovy-vary-title": "Karlovy Vary:",
+                "karlovy-vary-desc": "Poznejte krásy Karlových Varů, lázeňského města.",
+                "karlovy-vary-price": "Cena: 2190 CZK / 2140 CZK Senior & Student",
+                "karlstejn-title": "Výlet na Karlštejn:",
+                "karlstejn-desc": "Návštěva majestátního hradu Karlštejn.",
+                "karlstejn-price": "Cena: 1390 CZK / 1290 CZK Senior & Student",
+                "kutna-hora-title": "Výlet na Kutnou Horu:",
+                "kutna-hora-desc": "Prozkoumejte město Kutnou Horu, památku UNESCO.",
+                "kutna-hora-price": "Cena: 1640 CZK / 1540 CZK Senior & Student",
+                "restaurant-title": "Restaurace U Malvaze",
+                "footer-text": "Rádi pro vás zorganizujeme výlet nebo rezervaci stolu v restauraci na naší recepci nebo telefonicky."
+            },
+            it: {
+                header: "Benvenuti al Little King",
+                "hotel-info-title": "Informazioni sull'hotel",
+                "info-text": "Check-in: 15:00<br>Check-out: 11:00<br>Colazione: 7:30-10:30<br>Pulizia camere: 15:00-18:00<br>Ricezione disponibile 24 ore su 24<br>Wi-Fi accessibile senza password",
+                "services-title": "I nostri servizi",
+                "concierge-title": "Servizio di concierge",
+                "concierge-desc": "Migliora la tua esperienza con tour personalizzati, allestimenti speciali per occasioni come compleanni o ricorrenze romantiche e altro!",
+                "taxi-title": "Servizio taxi",
+                "taxi-desc": "Goditi i trasporti da e per i principali punti di transito come l'aeroporto e la stazione ferroviaria!",
+                "restaurant-title": "Prenotazione ristoranti",
+                "restaurant-desc": "Gusta il meglio della cucina locale e internazionale con il nostro servizio di prenotazione!",
+                "locations-title": "Le nostre posizioni",
+                "hotel-malvaze": "Hotel U Malvaze",
+                "malvaze-info": "Anenská 7, Praga 1<br>Principale hotel con ricezione 24 ore su 24",
+                "boutique-residence": "Boutique Residence",
+                "boutique-info": "Jilská 24, Praga 1<br>Residenza con chiosco per check-in automatico",
+                "old-town-residence": "Old Town Residence",
+                "old-town-info": "Maiselová 15, Praga 1<br>Residenza con chiosco per check-in automatico",
+                "contact-title": "Contattaci",
+                "contact-info": "Se hai domande, sentiti libero di contattare la nostra reception tramite WhatsApp o e-mail.",
+                "highlights-title": "Le attrazioni di Praga",
+                "bridge-title": "Ponte Carlo",
+                "bridge-desc": "è un ponte in pietra storico che offre splendide viste sul fiume Vltava e sul Castello di Praga.",
+                "square-title": "Piazza della Città Vecchia",
+                "square-desc": "mostra il famoso Orologio Astronomico, edifici colorati e un'atmosfera vivace.",
+                "castle-title": "Castello di Praga",
+                "castle-desc": "è una grandiosa fortezza che comprende musei, chiese e architetture sorprendenti.",
+                "wenceslas-title": "Piazza Venceslao",
+                "wenceslas-desc": "è un vivace quartiere brimming di negozi, ristoranti e architettura storica.",
+                "jewish-title": "Il Quartiere Ebraico",
+                "jewish-desc": "è di grande importanza storica con sinagoghe, il Cimitero Ebraico e vari punti di interesse.",
+                "city-tours-title": "Tour della città di Praga",
+                "all-inclusive-tour-title": "Tour All Inclusive:",
+                "all-inclusive-tour-desc": "Questo tour completo ti permette di vivere il meglio di Praga in sei ore.",
+                "castle-tour-title": "Tour del Castello di Praga:",
+                "castle-tour-desc": "Esplora la grandiosità del Castello di Praga con questo tour guidato di due ore.",
+                "night-cruise-title": "Crociera notturna sulla Vltava:",
+                "night-cruise-desc": "Vivi la magia di Praga di notte con questa crociera serale di tre ore.",
+                "beer-tour-title": "Tour della birra:",
+                "beer-tour-desc": "Scopri la famosa cultura della birra ceca in questo tour di degustazione di birra di 3 ore e mezza.",
+                "out-tours-title": "Tour fuori Praga",
+                "cesky-krumlov-title": "Český Krumlov:",
+                "cesky-krumlov-desc": "Questo tour di un'intera giornata ti porta a Český Krumlov.",
+                "cesky-krumlov-price": "Prezzo: 2890 CZK / 2790 CZK per anziani e studenti",
+                "terezin-title": "Monumento di Terezin:",
+                "terezin-desc": "Questo emozionante tour ti porta a Terezin.",
+                "terezin-price": "Prezzo: 1490 CZK / 1390 CZK per anziani e studenti",
+                "karlovy-vary-title": "Tour di Karlovy Vary:",
+                "karlovy-vary-desc": "Scopri la bellezza e l'eleganza di Karlovy Vary.",
+                "karlovy-vary-price": "Prezzo: 2190 CZK / 2140 CZK per anziani e studenti",
+                "karlstejn-title": "Tour del Castello di Karlštejn:",
+                "karlstejn-desc": "Visita la maestosa Karlštejn.",
+                "karlstejn-price": "Prezzo: 1390 CZK / 1290 CZK per anziani e studenti",
+                "kutna-hora-title": "Tour di Kutná Hora:",
+                "kutna-hora-desc": "Esplora la città di Kutná Hora, patrimonio dell'umanità dell'UNESCO.",
+                "kutna-hora-price": "Prezzo: 1640 CZK / 1540 CZK per anziani e studenti",
+                "restaurant-title": "Ristorante U Malvaze",
+                "footer-text": "Saremo felici di organizzare un tour per te o prenotare un tavolo in un ristorante presso la nostra reception o telefonicamente."
+            },
+            es: {
+                header: "Bienvenidos a Little King",
+                "hotel-info-title": "Información del hotel",
+                "info-text": "Check-in: 15:00<br>Check-out: 11:00<br>Desayuno: 7:30-10:30<br>Limpieza de habitaciones: 15:00-18:00<br>Recepción abierta 24 horas<br>Wi-Fi accesible sin contraseña",
+                "services-title": "Nuestros servicios",
+                "concierge-title": "Servicio de conserjería",
+                "concierge-desc": "¡Mejora tu experiencia con recorridos personalizados, preparaciones especiales en habitaciones para cumpleaños u ocasiones románticas y más!",
+                "taxi-title": "Servicio de taxi",
+                "taxi-desc": "¡Disfruta del transporte hacia y desde los principales puntos de tránsito como el aeropuerto y la estación de tren!",
+                "restaurant-title": "Reservas en restaurantes",
+                "restaurant-desc": "¡Saborea lo mejor de la cocina local e internacional con nuestro servicio de reservas de restaurantes!",
+                "locations-title": "Nuestras Ubicaciones",
+                "hotel-malvaze": "Hotel U Malvaze",
+                "malvaze-info": "Anenská 7, Praga 1<br>Hotel principal con recepción 24 horas",
+                "boutique-residence": "Boutique Residence",
+                "boutique-info": "Jilská 24, Praga 1<br>Residencia con quiosco para el check-in automático",
+                "old-town-residence": "Old Town Residence",
+                "old-town-info": "Maiselová 15, Praga 1<br>Residencia con quiosco para el check-in automático",
+                "contact-title": "Contáctenos",
+                "contact-info": "Si tienes alguna pregunta, no dudes en contactar a nuestra recepción a través de WhatsApp o email.",
+                "highlights-title": "Destacados de Praga",
+                "bridge-title": "El Puente de Carlos",
+                "bridge-desc": "es un histórico puente de piedra que ofrece impresionantes vistas del río Vltava y el Castillo de Praga.",
+                "square-title": "Plaza de la Ciudad Vieja",
+                "square-desc": "presenta el famoso Reloj Astronómico, edificios coloridos y una atmósfera vibrante.",
+                "castle-title": "Castillo de Praga",
+                "castle-desc": "es una gran fortaleza que incluye museos, iglesias y arquitectura impresionante.",
+                "wenceslas-title": "Plaza de Wenceslao",
+                "wenceslas-desc": "es un vibrante barrio lleno de tiendas, restaurantes y arquitectura histórica.",
+                "jewish-title": "El Barrio Judío",
+                "jewish-desc": "tiene un significado histórico con sinagogas, el Cementerio Judío y varios puntos de interés.",
+                "city-tours-title": "Tours de la Ciudad de Praga",
+                "all-inclusive-tour-title": "Tour Todo Incluido:",
+                "all-inclusive-tour-desc": "Este completo tour te permite experimentar lo mejor de Praga en seis horas.",
+                "castle-tour-title": "Tour del Castillo de Praga:",
+                "castle-tour-desc": "Explora la grandeza del Castillo de Praga con este tour guiado de dos horas.",
+                "night-cruise-title": "Crucero Nocturno por el Vltava:",
+                "night-cruise-desc": "Experimenta la magia de Praga por la noche con este crucero nocturno de tres horas.",
+                "beer-tour-title": "Tour de Cerveza:",
+                "beer-tour-desc": "Descubre la famosa cultura cervecera checa en este tour de degustación de cerveza de 3.5 horas.",
+                "out-tours-title": "Tours Fuera de Praga",
+                "cesky-krumlov-title": "Český Krumlov:",
+                "cesky-krumlov-desc": "Este tour de todo el día te lleva a Český Krumlov.",
+                "cesky-krumlov-price": "Precio: 2890 CZK / 2790 CZK para Seniors y Estudiantes",
+                "terezin-title": "Monumento de Terezin:",
+                "terezin-desc": "Este emotivo tour te lleva a Terezin.",
+                "terezin-price": "Precio: 1490 CZK / 1390 CZK para Seniors y Estudiantes",
+                "karlovy-vary-title": "Tour a Karlovy Vary:",
+                "karlovy-vary-desc": "Descubre la belleza y elegancia de Karlovy Vary.",
+                "karlovy-vary-price": "Precio: 2190 CZK / 2140 CZK para Seniors y Estudiantes",
+                "karlstejn-title": "Tour al Castillo de Karlštejn:",
+                "karlstejn-desc": "Visita el majestuoso Castillo de Karlštejn.",
+                "karlstejn-price": "Precio: 1390 CZK / 1290 CZK para Seniors y Estudiantes",
+                "kutna-hora-title": "Tour a Kutná Hora:",
+                "kutna-hora-desc": "Explora la ciudad de Kutná Hora, patrimonio de la UNESCO.",
+                "kutna-hora-price": "Precio: 1640 CZK / 1540 CZK para Seniors y Estudiantes",
+                "restaurant-title": "Restaurante U Malvaze",
+                "footer-text": "Nos complace organizar un tour para ti o reservar una mesa en un restaurante en nuestra recepción o por teléfono."
+            },
+            de: {
+                header: "Willkommen im Little King",
+                "hotel-info-title": "Hotelinformationen",
+                "info-text": "Check-in: 15:00<br>Check-out: 11:00<br>Frühstück: 7:30-10:30<br>Zimmerservice: 15:00-18:00<br>Rezeption 24 Stunden geöffnet<br>Wi-Fi ohne Passwort zugänglich",
+                "services-title": "Unsere Dienstleistungen",
+                "concierge-title": "Concierge-Service",
+                "concierge-desc": "Verbessern Sie Ihr Erlebnis mit maßgeschneiderten Touren, speziellen Arrangements für Anlässe wie Geburtstagsfeiern oder romantischen Momenten und mehr!",
+                "taxi-title": "Taxi-Service",
+                "taxi-desc": "Genießen Sie den Transport zu und von den wichtigsten Verkehrsknotenpunkten wie dem Flughafen und dem Bahnhof!",
+                "restaurant-title": "Restaurantreservierungen",
+                "restaurant-desc": "Genießen Sie das Beste der lokalen und internationalen Küche mit unserem Restaurantreservierungsservice!",
+                "locations-title": "Unsere Standorte",
+                "hotel-malvaze": "Hotel U Malvaze",
+                "malvaze-info": "Anenská 7, Prag 1<br> Haupthotel mit 24-Stunden-Rezeption",
+                "boutique-residence": "Boutique Residence",
+                "boutique-info": "Jilská 24, Prag 1<br>Residenz mit Self-Check-in-Kiosk",
+                "old-town-residence": "Old Town Residence",
+                "old-town-info": "Maiselová 15, Prag 1<br>Residenz mit Self-Check-in-Kiosk",
+                "contact-title": "Kontaktieren Sie uns",
+                "contact-info": "Wenn Sie Fragen haben, können Sie sich jederzeit über WhatsApp oder per E-Mail an unsere Rezeption wenden.",
+                "highlights-title": "Prager Highlights",
+                "bridge-title": "Die Karlsbrücke",
+                "bridge-desc": "ist eine historische Steinbrücke, die atemberaubende Ausblicke auf die Moldau und die Prager Burg bietet.",
+                "square-title": "Altstädter Platz",
+                "square-desc": "zeigt die berühmte astronomische Uhr, farbenfrohe Gebäude und eine lebhafte Atmosphäre.",
+                "castle-title": "Prager Burg",
+                "castle-desc": "ist eine grandiose Festung mit Museen, Kirchen und atemberaubender Architektur.",
+                "wenceslas-title": "Wenzelsplatz",
+                "wenceslas-desc": "ist ein lebendiger Stadtteil voller Geschäfte, Restaurants und historischer Architektur.",
+                "jewish-title": "Das Jüdische Viertel",
+                "jewish-desc": "hat historische Bedeutung mit Synagogen, dem Jüdischen Friedhof und verschiedenen Sehenswürdigkeiten.",
+                "city-tours-title": "Stadttouren in Prag",
+                "all-inclusive-tour-title": "All-Inclusive-Tour:",
+                "all-inclusive-tour-desc": "Diese umfassende Tour ermöglicht es Ihnen, das Beste von Prag in sechs Stunden zu erleben.",
+                "castle-tour-title": "Prager Burg Tour:",
+                "castle-tour-desc": "Entdecken Sie die Pracht der Prager Burg bei dieser zweistündigen geführten Tour.",
+                "night-cruise-title": "Nachtkreuzfahrt auf der Moldau:",
+                "night-cruise-desc": "Erleben Sie die Magie Prags bei Nacht mit dieser dreistündigen Abendkreuzfahrt.",
+                "beer-tour-title": "Bier-Tour:",
+                "beer-tour-desc": "Entdecken Sie die berühmte tschechische Bierkultur auf dieser 3,5-stündigen Bierverkostungstour.",
+                "out-tours-title": "Touren außerhalb von Prag",
+                "cesky-krumlov-title": "Český Krumlov:",
+                "cesky-krumlov-desc": "Diese Ganztagestour bringt Sie nach Český Krumlov.",
+                "cesky-krumlov-price": "Preis: 2890 CZK / 2790 CZK für Senioren & Studenten",
+                "terezin-title": "Terezín Denkmal:",
+                "terezin-desc": "Diese bewegende Tour führt Sie nach Terezín.",
+                "terezin-price": "Preis: 1490 CZK / 1390 CZK für Senioren & Studenten",
+                "karlovy-vary-title": "Die Karlsbader Tour:",
+                "karlovy-vary-desc": "Entdecken Sie die Schönheit und Eleganz von Karlovy Vary.",
+                "karlovy-vary-price": "Preis: 2190 CZK / 2140 CZK für Senioren & Studenten",
+                "karlstejn-title": "Die Karlštejn-Tour:",
+                "karlstejn-desc": "Besuchen Sie die majestätische Karlštejn.",
+                "karlstejn-price": "Preis: 1390 CZK / 1290 CZK für Senioren & Studenten",
+                "kutna-hora-title": "Kutná Hora Tour:",
+                "kutna-hora-desc": "Entdecken Sie die Stadt Kutná Hora, UNESCO-Weltkulturerbe.",
+                "kutna-hora-price": "Preis: 1640 CZK / 1540 CZK für Senioren & Studenten",
+                "restaurant-title": "Restaurant U Malvaze",
+                "footer-text": "Wir freuen uns, eine Tour für Sie zu organisieren oder einen Tisch in einem Restaurant an unserer Rezeption oder telefonisch zu reservieren."
+            }
         };
 
         function changeLanguage(language) {
+            // Nastavení textů na základě vybraného jazyka
             document.getElementById("header").innerText = translations[language].header;
             document.getElementById("hotel-info-title").innerText = translations[language]["hotel-info-title"];
             document.getElementById("info-text").innerHTML = translations[language]["info-text"];
@@ -516,8 +839,8 @@
             document.getElementById("footer-text").innerText = translations[language]["footer-text"];
         }
 
-        // Устанавливаем язык по умолчанию
-        changeLanguage('en');
+        // Nastavení výchozího jazyka
+        changeLanguage('cs');
     </script>
 </body>
 </html>
