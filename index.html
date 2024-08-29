@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Welcome to our hotel in Prague. Check-in and check-out information, services, and local highlights.">
+    <meta name="keywords" content="hotel, Prague, accommodation, services, tours">
+    <title>Hotel Information</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: white;
+            color: black;
+            overflow-x: hidden;
+            font-size: 16px;
+        }
+
+        .container {
+            max-width: 100%;
+            margin: 0 auto;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .language-selector {
+            margin-top: 10px;
+        }
+
+        .language-btn {
+            margin: 5px;
+            padding: 5px 10px;
+            cursor: pointer;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        .header {
+            font-size: 24px;
+            font-weight: bold;
+            padding: 20px 10px;
+        }
+
+        .rounded-section {
+            width: 100%;
+            background-color: black;
+            color: white;
+            height: 0;
+            padding-top: 100%;
+            padding-bottom: 0;
+            border-radius: 50% 50% 0 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .rounded-section img {
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+            max-width: 50%;
+            filter: invert(1);
+        }
+
+        .content {
+            padding: 20px;
+            background-color: black;
+            color: white;
+            text-align: left;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .section h3 {
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .info-text {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1em;
+        }
+
+        .footer {
+            background-color: red;
+            color: white;
+            padding: 20px;
+            font-size: 1.2em;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .service-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 10px;
+        }
+
+        .service-icon {
+            width: 50px;
+            margin-right: 10px;
+            flex-shrink: 0;
+        }
+
+        .location-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .qr-code {
+            width: 50px;
+            margin: 0 5px;
+        }
+
+        .contact-info {
+            background-color: black;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 10px;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .small-text {
+            font-size: 0.9em;
+            color: red;
+        }
+
+        .highlight-section {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .highlight {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .highlight-content {
+            display: flex;
+            align-items: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .highlight-image {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .highlight-text {
+            flex: 2;
+            text-align: left;
+        }
+
+        .highlight h3 { 
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        .center-text {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .tour-item,
+        .restaurant-item {
+            margin: 20px 0;
+        }
+
+        .restaurant-list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .restaurant-name {
+            text-align: center;
+            margin-bottom: 3px;
+        }
+
+        .restaurant-address {
+            color: red;
+            text-decoration: none;
+        }
+
+        .restaurant-address:hover {
+            text-decoration: underline;
+        }
+
+        .restaurant-section {
+            margin: 30px 0;
+        }
+
+        .restaurant-image {
+            margin: 20px auto;
+            border: 2px solid white;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <button class="language-btn" onclick="changeLanguage('en')">EN</button>
+            <button class="language-btn" onclick="changeLanguage('ru')">RU</button>
+            <button class="language-btn" onclick="changeLanguage('cs')">CS</button>
+            <button class="language-btn" onclick="changeLanguage('it')">IT</button>
+            <button class="language-btn" onclick="changeLanguage('es')">ES</button>
+            <button class="language-btn" onclick="changeLanguage('de')">DE</button>
+        </div>
+
+        <div class="header" id="header">Welcome to Little King</div>
+
+        <div class="rounded-section">
+            <a href="https://www.littleking.cz/">
+                <img src="Logo.png" alt="Hotel Logo">
+            </a>
+        </div>
+
+        <div class="content">
+            <div class="section">
+                <h3 id="hotel-info-title">Hotel Information</h3>
+                <p class="info-text" id="info-text">
+                    Check-in: 3 p.m.<br>
+                    Check-out: 11 a.m.<br>
+                    Breakfast hours: 7.30-10.30 a.m.<br>
+                    Room cleaning hours: 3-6 p.m.<br>
+                    Reception desk is available 24/7<br>
+                    Wi-Fi is accessible without a password
+                </p>
+            </div>
+
+            <div class="section">
+                <h3 id="services-title">Our Services</h3>
+                <div class="service-item">
+                    <img src="Concierge.png" alt="Concierge Icon" class="service-icon">
+                    <div class="service-description">
+                        <div class="service-title" id="concierge-title">Concierge service</div>
+                        <span id="concierge-desc">Elevate your experience with custom tours, special occasion room setups as birthday set or romantic set, and more!</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="Taxi.png" alt="Taxi Icon" class="service-icon">
+                    <div class="service-description">
+                        <div class="service-title" id="taxi-title">Taxi service</div>
+                        <span id="taxi-desc">Enjoy transportation to and from major transit points like the airport and train station, ensuring a smooth start and end to your travels!</span>
+                    </div>
+                </div>
+                <div class="service-item">
+                    <img src="Restaurant.png" alt="Restaurant Icon" class="service-icon">
+                    <div class="service-description">
+                        <div class="service-title" id="restaurant-title">Restaurant booking</div>
+                        <span id="restaurant-desc">Savor the best of local and international cuisine with our restaurant booking service, guaranteeing you a table at top-rated restaurants!</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 id="locations-title">Our Locations</h3>
+                <div class="location-item">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Hotel+U+Malvaze+Anenská+7,+Prague+1" target="_blank">
+                        <img src="QR Malvaz.png" alt="QR Code" class="qr-code">
+                    </a>
+                    <div>
+                        <strong id="hotel-malvaze">Hotel U Malvaze</strong><br>
+                        <span id="malvaze-info">Anenská 7, Prague 1<br>Main hotel with 24/7 reception desk</span>
+                    </div>
+                </div>
+                <div class="location-item" style="justify-content: flex-end;">
+                    <div style="text-align: right;">
+                        <strong id="boutique-residence">Boutique Residence</strong><br>
+                        <span id="boutique-info">Jilská 24, Prague 1<br>Residence with self check-in kiosk</span>
+                    </div>
+                    <a href="https://www.google.com/maps/search/?api=1&query=Boutique+Residence+Jilská+24,+Prague+1" target="_blank">
+                        <img src="QR Boutique.png" alt="QR Code" class="qr-code">
+                    </a>
+                </div>
+                <div class="location-item">
+                    <a href="https://www.google.com/maps/search/?api=1&query=Old+Town+Residence+Maiselová+15,+Prague+1" target="_blank">
+                        <img src="QR Old Town.png" alt="QR Code" class="qr-code">
+                    </a>
+                    <div>
+                        <strong id="old-town-residence">Old Town Residence</strong><br>
+                        <span id="old-town-info">Maiselová 15, Prague 1<br>Residence with self check-in kiosk</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h3 id="contact-title">Contact Us</h3>
+                <p class="center-text" id="contact-info">
+                    If you have any questions, feel free to contact our reception via WhatsApp or by email.
+                </p>
+                <div class="contact-info">
+                    <div class="contact-phone" style="flex: 1;">
+                        <a href="tel:+420774921601" class="small-text">+420 774 921 601</a><br>
+                        <a href="tel:+420212812316" class="small-text">+420 212 812 316</a>
+                    </div>
+                    <div class="contact-email" style="flex: 1; text-align: right;">
+                        <a href="mailto:reception@littleking.cz" class="small-text">reception@littleking.cz</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-section">
+                <h3 id="highlights-title">Prague Highlights</h3>
+                <div class="highlight">
+                    <div class="highlight-content">
+                        <div class="highlight-image">
+                            <img src="Charles Bridge.png" alt="The Charles Bridge" style="max-width: 100%; height: auto;">
+                        </div>
+                        <div class="highlight-text">
+                            <strong id="bridge-title">The Charles Bridge</strong><br>
+                            <div id="bridge-desc">is a historic stone bridge that offers breathtaking views of the Vltava River and Prague Castle</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-content">
+                        <div class="highlight-image">
+                            <img src="Old Town Square.png" alt="Old Town Square" style="max-width: 100%; height: auto;">
+                        </div>
+                        <div class="highlight-text">
+                            <strong id="square-title">Old Town Square</strong><br>
+                            <div id="square-desc">showcases the famous Astronomical Clock, colorful buildings, and a vibrant atmosphere</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-content">
+                        <div class="highlight-image">
+                            <img src="Prague Castle.png" alt="Prague Castle" style="max-width: 100%; height: auto;">
+                        </div>
+                        <div class="highlight-text">
+                            <strong id="castle-title">Prague Castle</strong><br>
+                            <div id="castle-desc">is a grand fortress comprising museums, churches, and breathtaking architecture</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-content">
+                        <div class="highlight-image">
+                            <img src="Wenceslas Square.png" alt="Wenceslas Square" style="max-width: 100%; height: auto;">
+                        </div>
+                        <div class="highlight-text">
+                            <strong id="wenceslas-title">Wenceslas Square</strong><br>
+                            <div id="wenceslas-desc">is a vibrant district brimming with shops, eateries, and historic architecture</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="highlight">
+                    <div class="highlight-content">
+                        <div class="highlight-image">
+                            <img src="Jewish Quarter.png" alt="The Jewish Quarter" style="max-width: 100%; height: auto;">
+                        </div>
+                        <div class="highlight-text">
+                            <strong id="jewish-title">The Jewish Quarter</strong><br>
+                            <div id="jewish-desc">is historical significance with synagogues, the Jewish Cemetery, and various landmarks</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="highlight-section">
+                <h3 id="city-tours-title">Prague City Tours</h3>
+                <div class="tour-item">
+                    <strong id="all-inclusive-tour-title">All Inclusive Tour:</strong><br>
+                    <span id="all-inclusive-tour-desc">This comprehensive tour allows you to experience the best of Prague in six hours. It includes a scenic boat trip on the Vltava River, offering unique views of the city from the water, including sights like Charles Bridge and Prague Castle.</span><br>
+                    <strong>Price:</strong> 1590 CZK / 1500 CZK Senior & Student
+                </div>
+                <div class="tour-item">
+                    <strong id="castle-tour-title">Prague Castle:</strong><br>
+                    <span id="castle-tour-desc">Explore the grandeur of Prague Castle with this two-hour guided tour that takes you through the entire castle area.</span><br>
+                    <strong>Price:</strong> 650 CZK
+                </div>
+                <div class="tour-item">
+                    <strong id="jewish-town-tour-title">Prague Jewish Town:</strong><br>
+                    <span id="jewish-town-tour-desc">This three-hour tour takes you through Prague’s historic Jewish Quarter, known as Josefov. The tour includes visits to the ancient synagogues, the Jewish Cemetery, and the Old-New Synagogue.</span><br>
+                    <strong>Price:</strong> 1290 CZK / 1250 CZK Senior & Student
+                </div>
+                <div class="tour-item">
+                    <strong id="night-cruise-title">Prague by Night River Cruise:</strong><br>
+                    <span id="night-cruise-desc">Experience the magic of Prague at night with this three-hour evening river cruise.</span><br>
+                    <strong>Price:</strong> 1480 CZK essential / 1980 CZK exclusive
+                </div>
+                <div class="tour-item">
+                    <strong id="beer-tour-title">Beer Tour:</strong><br>
+                    <span id="beer-tour-desc">Discover the famous Czech beer culture on this 3.5-hour guided beer-tasting tour. You'll visit some of Prague's best pubs and breweries, where you can sample a variety of Czech beers and learn about the brewing process.</span><br>
+                    <strong>Price:</strong> 1300 CZK
+                </div>
+                <div class="tour-item">
+                    <strong id="clementinum-title">Clementinum Czech Orchestra:</strong><br>
+                    <strong>Price:</strong> 950 CZK / 800 CZK / 650 CZK
+                </div>
+                <div class="tour-item">
+                    <strong id="hop-on-title">Hop-On Hop-Off Bus:</strong><br>
+                    <strong>Price:</strong> 870 CZK 24hr / 990 CZK 48hr
+                </div>
+            </div>
+
+            <div class="highlight-section">
+                <h3 id="out-tours-title">Out of Prague Tours</h3>
+                <div class="tour-item">
+                    <strong id="cesky-krumlov-title">Český Krumlov:</strong><br>
+                    <span id="cesky-krumlov-desc">This full-day tour takes you to Český Krumlov, home to the largest Baroque chateau in the Czech Republic.</span><br>
+                    <span id="cesky-krumlov-price">Price: 2890 CZK / 2790 CZK Senior & Student</span>
+                </div>
+                <div class="tour-item">
+                    <strong id="terezin-title">Terezin Monument:</strong><br>
+                    <span id="terezin-desc">This poignant tour takes you to the town of Terezín, the site of the largest concentration camp in the Czech Republic during World War II.</span><br>
+                    <span id="terezin-price">Price: 1490 CZK / 1390 CZK Senior & Student</span>
+                </div>
+                <div class="tour-item">
+                    <strong id="karlovy-vary-title">Karlovy Vary Tour:</strong><br>
+                    <span id="karlovy-vary-desc">Discover the beauty and elegance of Karlovy Vary, the most famous spa town in the Czech Republic.</span><br>
+                    <span id="karlovy-vary-price">Price: 2190 CZK / 2140 CZK Senior & Student</span>
+                </div>
+                <div class="tour-item">
+                    <strong id="karlstejn-title">Karlštejn Castle Tour:</strong><br>
+                    <span id="karlstejn-desc">Visit the majestic Karlštejn Castle, a 14th-century Gothic fortress built by Emperor Charles IV to protect the crown jewels.</span><br>
+                    <span id="karlstejn-price">Price: 1390 CZK / 1290 CZK Senior & Student</span>
+                </div>
+                <div class="tour-item">
+                    <strong id="kutna-hora-title">Kutná Hora Tour:</strong><br>
+                    <span id="kutna-hora-desc">Explore the UNESCO-listed town of Kutná Hora, renowned for its beautifully preserved medieval architecture.</span><br>
+                    <span id="kutna-hora-price">Price: 1640 CZK / 1540 CZK Senior & Student</span>
+                </div>
+            </div>
+
+            <div class="highlight-section">
+                <h3 id="restaurant-title">Restaurant U Malvaze</h3>
+                <img src="Restaurant Menu.png" alt="Restaurant Image" class="restaurant-image">
+            </div>
+
+            <div class="footer">
+                <div id="footer-text">We will be happy to organize a tour for you or book a table in a restaurant at our reception or by phone</div>
+                <br>
+                <a href="tel:+420774921601" style="color: white; font-size: 1.2em;">+420 774 921 601</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const translations = {
+            // Zde prosím vložte vaše překlady
+        };
+
+        function changeLanguage(language) {
+            document.getElementById("header").innerText = translations[language].header;
+            document.getElementById("hotel-info-title").innerText = translations[language]["hotel-info-title"];
+            document.getElementById("info-text").innerHTML = translations[language]["info-text"];
+            document.getElementById("services-title").innerText = translations[language]["services-title"];
+            document.getElementById("concierge-title").innerText = translations[language]["concierge-title"];
+            document.getElementById("concierge-desc").innerText = translations[language]["concierge-desc"];
+            document.getElementById("taxi-title").innerText = translations[language]["taxi-title"];
+            document.getElementById("taxi-desc").innerText = translations[language]["taxi-desc"];
+            document.getElementById("restaurant-title").innerText = translations[language]["restaurant-title"];
+            document.getElementById("restaurant-desc").innerText = translations[language]["restaurant-desc"];
+            document.getElementById("locations-title").innerText = translations[language]["locations-title"];
+            document.getElementById("hotel-malvaze").innerText = translations[language]["hotel-malvaze"];
+            document.getElementById("malvaze-info").innerHTML = translations[language]["malvaze-info"];
+            document.getElementById("boutique-residence").innerText = translations[language]["boutique-residence"];
+            document.getElementById("boutique-info").innerHTML = translations[language]["boutique-info"];
+            document.getElementById("old-town-residence").innerText = translations[language]["old-town-residence"];
+            document.getElementById("old-town-info").innerHTML = translations[language]["old-town-info"];
+            document.getElementById("contact-title").innerText = translations[language]["contact-title"];
+            document.getElementById("contact-info").innerHTML = translations[language]["contact-info"];
+            document.getElementById("highlights-title").innerText = translations[language]["highlights-title"];
+            document.getElementById("bridge-title").innerText = translations[language]["bridge-title"];
+            document.getElementById("bridge-desc").innerText = translations[language]["bridge-desc"];
+            document.getElementById("square-title").innerText = translations[language]["square-title"];
+            document.getElementById("square-desc").innerText = translations[language]["square-desc"];
+            document.getElementById("castle-title").innerText = translations[language]["castle-title"];
+            document.getElementById("castle-desc").innerText = translations[language]["castle-desc"];
+            document.getElementById("wenceslas-title").innerText = translations[language]["wenceslas-title"];
+            document.getElementById("wenceslas-desc").innerText = translations[language]["wenceslas-desc"];
+            document.getElementById("jewish-title").innerText = translations[language]["jewish-title"];
+            document.getElementById("jewish-desc").innerText = translations[language]["jewish-desc"];
+            document.getElementById("city-tours-title").innerText = translations[language]["city-tours-title"];
+            document.getElementById("all-inclusive-tour-title").innerText = translations[language]["all-inclusive-tour-title"];
+            document.getElementById("all-inclusive-tour-desc").innerText = translations[language]["all-inclusive-tour-desc"];
+            document.getElementById("castle-tour-title").innerText = translations[language]["castle-tour-title"];
+            document.getElementById("castle-tour-desc").innerText = translations[language]["castle-tour-desc"];
+            document.getElementById("night-cruise-title").innerText = translations[language]["night-cruise-title"];
+            document.getElementById("night-cruise-desc").innerText = translations[language]["night-cruise-desc"];
+            document.getElementById("beer-tour-title").innerText = translations[language]["beer-tour-title"];
+            document.getElementById("beer-tour-desc").innerText = translations[language]["beer-tour-desc"];
+            document.getElementById("out-tours-title").innerText = translations[language]["out-tours-title"];
+            document.getElementById("cesky-krumlov-title").innerText = translations[language]["cesky-krumlov-title"];
+            document.getElementById("cesky-krumlov-desc").innerText = translations[language]["cesky-krumlov-desc"];
+            document.getElementById("cesky-krumlov-price").innerText = translations[language]["cesky-krumlov-price"];
+            document.getElementById("terezin-title").innerText = translations[language]["terezin-title"];
+            document.getElementById("terezin-desc").innerText = translations[language]["terezin-desc"];
+            document.getElementById("terezin-price").innerText = translations[language]["terezin-price"];
+            document.getElementById("karlovy-vary-title").innerText = translations[language]["karlovy-vary-title"];
+            document.getElementById("karlovy-vary-desc").innerText = translations[language]["karlovy-vary-desc"];
+            document.getElementById("karlovy-vary-price").innerText = translations[language]["karlovy-vary-price"];
+            document.getElementById("karlstejn-title").innerText = translations[language]["karlstejn-title"];
+            document.getElementById("karlstejn-desc").innerText = translations[language]["karlstejn-desc"];
+            document.getElementById("karlstejn-price").innerText = translations[language]["karlstejn-price"];
+            document.getElementById("kutna-hora-title").innerText = translations[language]["kutna-hora-title"];
+            document.getElementById("kutna-hora-desc").innerText = translations[language]["kutna-hora-desc"];
+            document.getElementById("kutna-hora-price").innerText = translations[language]["kutna-hora-price"];
+            document.getElementById("footer-text").innerText = translations[language]["footer-text"];
+        }
+
+        // Устанавливаем язык по умолчанию
+        changeLanguage('en');
+    </script>
+</body>
+</html>
